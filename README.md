@@ -1,5 +1,8 @@
 # CodeIgniter 4 Application Starter
 
+# Blogs
+![image](https://github.com/EliuFlorez/app-codeigniter/assets/784787/1c8e0b06-df2e-4ab2-9e9d-1cfa0e1ba7fd)
+
 ## What is CodeIgniter?
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
