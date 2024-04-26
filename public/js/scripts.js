@@ -14,10 +14,11 @@ function blogList(search) {
             var blogs = response.data.data;
             $('#blog-list').empty();
             $.each(blogs, function(index, blog) {
+                var formattedDate = moment(blog.created_at).format('MMMM D, YYYY');
                 var truncatedContent = blog.content.substring(0, 70);
                 var $card = $('<div class="card mb-4">');
                 var $cardBody = $('<div class="card-body">');
-                var $date = $('<div class="small text-muted">').text(blog.created_at);
+                var $date = $('<div class="small text-muted">').text(formattedDate);
                 var $title = $('<h2 class="card-title">').text(blog.title);
                 var $content = $('<p class="card-text">').text(truncatedContent+"...");
                 var $readMore = $('<a class="btn btn-primary" href="#!">').text('Read more →').click(function() {
